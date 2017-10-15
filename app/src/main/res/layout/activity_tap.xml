@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.pedromassango.tap.views.TapActivity">
+
+    <TextView
+        android:text="Clique para iniciar"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/btn_start"
+        android:textColor="@color/red_light"
+        android:background="@color/lessWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/primaryText"/>
+
+        <TextView
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingEnd="4dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="4dp"
+            android:paddingStart="0dp"
+            android:text="Tempo:"
+            android:textColor="@color/primaryText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/v1"
+            android:layout_toRightOf="@id/v1"
+            android:textColor="@color/primaryText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/primaryText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_toLeftOf="@id/tv_points"
+            android:layout_toStartOf="@id/tv_points"
+            android:paddingEnd="4dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="4dp"
+            android:paddingStart="0dp"
+            android:text="Pontos:"
+            android:textColor="@color/primaryText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/info"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_button_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="8dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="8dp"
+                android:paddingStart="0dp"
+                android:text="@string/precione_o_bot_o"
+                android:textSize="@dimen/text_view_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_button_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VERMELHO"
+                android:textSize="@dimen/text_view_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_1"
+                style="@style/ButtonTapStyle"
+                android:layout_width="@dimen/button_tap_with"
+                android:layout_height="@dimen/button_tap_height"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin" />
+
+            <ImageButton
+                android:id="@+id/btn_2"
+                style="@style/ButtonTapStyle"
+                android:layout_width="@dimen/button_tap_with"
+                android:layout_height="@dimen/button_tap_height"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin" />
+
+            <ImageButton
+                android:id="@+id/btn_3"
+                style="@style/ButtonTapStyle"
+                android:layout_width="@dimen/button_tap_with"
+                android:layout_height="@dimen/button_tap_height" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Precione</string>
+    <string name="precione_o_bot_o">Precione o botão</string>
+
+    <string name="alta_pontua_o">Pontuação actual:</string>
+    <string name="pontos">Pontos:</string>
+    <string name="acertos">Acertos:</string>
+    <string name="falhas">Falhas:</string>
+    <string name="total_jogados">Total jogados:</string>
+    <string name="instrucoes">Leia a palavra e selecione a cor que está associado a ele.\n\nCuidado, a palavra é escrita em cor diferente, por isso pode levar a confusão.</string>
+    <string name="dificult_easy">Fácil\n\t\t Voce tem 1 minuto para obter 5.000 ou mais pontuações.</string>
+    <string name="dificult_intermedio_info">Intermédio\n\t\t Voce tem 30 segundos para obter 10.000 ou mais pontuações.</string>
+    <string name="dificult_hard_info">Difícil\n\t\t Voce 15 segundos tem para obter 15.000 ou mais pontuações.</string>
+    <string name="level_easy_only">OBS:\nTens de vencer o nível FACIL para activar o nível seguinte.</string>
+    <string name="level_medium_only">OBS:\nVenca o nível INTERMEDIO para activar o último nível.</string>
+    <string name="dificuldade">DIFICULDADE</string>
+    <string name="dificult_facil">Fácil</string>
+    <string name="dificult_intermedio">Intermédio</string>
+    <string name="dificult_dificil">Difícil</string>
+    <string name="instru_es">INSTRUÇÕES</string>
+    <string name="dificuldade_actual">Dificuldade actual:</string>
+    <string name="concluidos">Concluidos:</string>
+    <string name="jogo_terminado">JOGO TERMINADO</string>
+    <string name="play">Jogar</string>
+    <string name="quit">Sair</string>
+    <string name="next_level">próximo nível</string>
+    <string name="pontos_do_jogo">Pontos do jogo</string>
+    <string name="points_to_next_level">Pontos necessário para próximo nível</string>
+    <string name="start">INICIAR</string>
+    <string name="jogados">Jogados:</string>
+    <string name="level_passed_successfull_info">Prabéns, voce, terminou este nível com sucesso, agora voce pode seguir para o próximo nível. Esteja preparado…</string>
+    <string name="tap">PRECIONE</string>
+    <string name="the_button">O BOTÃO</string>
+    <string name="last_level_info">Voce conclúiu, todos os niveis, obrigdado por jogar este jogo.\nDe certeza que sua mente ja não é a mesma, aposto que sua capacidade de atenção aumentou muito.\nRecomendo que continue jogando, para manter o exercício de concentração mental!</string>
+    <string name="about">Sobre</string>
+    <string name="about_app">Este aplicativo vai te ajudar a ter mais concentração mental.\n\nÉ considerado como um jogo mental (é isso que ele é), por te fazer confundir oque você lê e oque vê.\n\nEspero que goste, e se voê ainda têm pouca concentração mental, este app vai lhe ajudar muito, divirta-se.\n\nDesenvolvedor: Pedro Massango.</string>
+    <string name="ok">OK</string>
+    <string name="on_facebook">Página no facebook</string>
+    <string name="start_game">COMEÇAR JOGO</string>
+    <string name="good_look">E… boa sorte.</string>
+
+</resources>

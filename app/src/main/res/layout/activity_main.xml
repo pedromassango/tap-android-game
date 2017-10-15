@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.pedromassango.tap.views.MainActivity">
+
+    <include
+        android:id="@+id/app_logo"
+        layout="@layout/app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp">
+
+        <RelativeLayout
+            android:id="@+id/v99"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="@dimen/rldimen"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/v98"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/acertos"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_acerts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v98"
+                    android:layout_centerHorizontal="true"
+                    android:maxEms="6"
+                    android:paddingTop="16dp"
+                    android:text="0"
+                    android:textColor="@color/primaryText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/rldimen"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/v97"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/falhas"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_fails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v97"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="16dp"
+                    android:text="0"
+                    android:textColor="@color/primaryText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="@dimen/rldimen"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/v3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/pontos"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_max_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v3"
+                    android:layout_centerHorizontal="true"
+                    android:maxEms="10"
+                    android:ellipsize="end"
+                    android:paddingTop="16dp"
+                    android:text="0"
+                    android:textColor="@color/primaryText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/rldimen"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/v100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/dificuldade_actual"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_current_dificult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v100"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="16dp"
+                    android:text="0"
+                    android:textColor="@color/primaryText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_instrucoes"
+        style="@style/ButtonTapStyleInverse"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/instru_es" />
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/ButtonTapStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@id/btn_instrucoes"
+        android:layout_marginBottom="16dp"
+        android:text="@string/start_game" />
+
+    <TextView
+        android:id="@+id/about"
+        android:padding="18dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="12dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="0dp"
+        android:paddingLeft="0dp"
+
+        android:text="@string/about"
+        android:textColor="@color/red"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

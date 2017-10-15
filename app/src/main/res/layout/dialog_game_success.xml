@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gree"
+        android:gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/jogo_terminado"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_success_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/finish"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:text="@string/level_passed_successfull_info"
+        android:textColor="@color/primaryText"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_success_info"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/pontos_do_jogo"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="0"
+            android:textColor="@color/gree"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/v1"
+            android:paddingTop="@dimen/tv_padding"
+            android:text="@string/jogados"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_points"
+            android:paddingTop="@dimen/tv_padding"
+            android:text="0"
+            android:textColor="@color/gree"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/v2"
+            android:paddingTop="@dimen/tv_padding"
+            android:text="@string/acertos"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_acerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_done"
+            android:paddingTop="@dimen/tv_padding"
+            android:text="0"
+            android:textColor="@color/gree"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/v5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/v4"
+            android:paddingTop="@dimen/tv_padding"
+            android:text="@string/falhas"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_fails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_acerts"
+            android:paddingTop="@dimen/tv_padding"
+            android:text="0"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>
