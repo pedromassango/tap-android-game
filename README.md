@@ -13,6 +13,6 @@ Email: pedromassango.developer@gmail.com
 Visite meu <a href="https://www.youtube.com/channel/UCBiJzXGvkuT9aG2Yq8BYYnQ">canal no Youtube</a>.
 
 
-<img src="/screenshots/home.png" width="280" height="480"> <img src="/screenshots/game.png" width="280" height="480"> <img src="/screenshots/instrussoes.png" width="280" height="480">
+<img src="/screenshots/home.png" width="260" height="480"> <img src="/screenshots/device-2017-10-15-140825.png" width="260" height="480"> <img src="/screenshots/instrussoes.png" width="260" height="480">
 
-<img src="/screenshots/dificuldade.png" width="280" height="480"> <img src="/screenshots/sobre.png" width="280" height="480">
+<img src="/screenshots/dificuldade.png" width="260" height="480"> <img src="/screenshots/game.png" width="260" height="480">
